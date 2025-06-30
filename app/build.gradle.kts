@@ -7,6 +7,10 @@ plugins {
 group = "hexlet.code"
 version = "1.0-SNAPSHOT"
 
+tasks.getByName<JavaExec>("run") {
+    standardInput = System.`in`
+}
+
 application {
     mainClass.set("hexlet.code.App")
 }
