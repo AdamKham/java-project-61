@@ -28,7 +28,7 @@ public class App {
             case 5 -> Progression.startGame();
             case 6 -> Prime.startGame();
             case 0 -> System.out.println("Goodbye!");
-            default -> System.out.println("Invalid choice!");
+            default -> System.out.println("Unknown user choice: " + choice);
         }
     }
 }
